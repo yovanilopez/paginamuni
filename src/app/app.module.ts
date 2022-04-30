@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -26,6 +26,7 @@ import { VehiculoComponent } from './vehiculo/vehiculo.component';
 import { VehiculolistaComponent } from './vehiculo/COMPONENTES/vehiculolista/vehiculolista.component';
 
 import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehiculomdif.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,6 @@ import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehic
         BienvenidaComponent,
         VehiculoComponent,
         VehiculolistaComponent,
-      
         VehiculomdifComponent
   ],
   imports: [
@@ -56,7 +56,10 @@ import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehic
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
