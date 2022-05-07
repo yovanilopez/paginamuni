@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {VehiculosService, } from 'src/app/vehiculo/Services/vehiculos.service';
+import {VehiculosService,Modelo } from 'src/app/vehiculo/Services/vehiculos.service';
 
 
 @Component({
@@ -12,9 +12,23 @@ export class VehiculoComponent implements OnInit {
  
  
   constructor( private EstudianteService : VehiculosService, private router:Router) { }
-
+  Modelo: Modelo= {
+    IdVehiculo: '',
+    NumeroVehiculo: '',
+    Color: '',
+    NumeroLinea: '',
+    IdPersona: '',
+    IdEvidencias: '',
+    IdPagos: '',
+    IdRevision: '',
+    IdTurno: ''
+  }
   ngOnInit(): void {
   }
- 
+  agregar(){
+  
+    this.EstudianteService.addmodelo(this.Modelo).subscribe();
+     this.router.navigate(['/listavehiculo']);
+   }
 
 }

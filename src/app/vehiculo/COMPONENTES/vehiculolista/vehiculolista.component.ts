@@ -49,8 +49,8 @@ export class VehiculolistaComponent implements OnInit {
 
 
 
-  modificar(IdVehiculo:string){
-    this.router.navigate(['/modificarvehiculo/'+IdVehiculo])
+  modificar(NumeroPlaca:string){
+    this.router.navigate(['/modificarvehiculo/'+NumeroPlaca])
   }
 
 

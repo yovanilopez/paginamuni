@@ -30,23 +30,23 @@ export class VehiculosService {
   }
 
   //modificar
-  editmodelo(id:string, modelo:Modelo){
-    return this.http.put(this.url+'/'+id,modelo);
+  editmodelo(NumeroPlaca:string, modelo:Modelo){
+    return this.http.put(this.url+'/'+NumeroPlaca,modelo);
 
   }
 }
 export interface Modelo {
 
-  IdVehiculo?:any;
+  IdVehiculo :string;
   NumeroVehiculo: string;
-  NumeroPlaca: string;
+  NumeroPlaca?: any;
   Color: string;
   NumeroLinea: string;
-  IdPersona: string;
+  IdPersona: string; 
   IdEvidencias: string;
   IdPagos: string;
   IdRevision: string;
-  IdTurno: string
+  IdTurno: string;
  
  
  

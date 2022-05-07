@@ -1,1 +1,51 @@
-<p>vehiculomdif works!</p>
+
+<div class="container">
+    <p>agregar</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+         
+          
+
+          <div class="mb3">
+            <label class="form-label">NumeroVehiculo</label>
+            <input [(ngModel)]="Modelo.NumeroVehiculo" type="text" class="form-control" name="NumeroVehiculo">
+          </div>
+  
+         
+  
+          <div class="mb3">
+            <label class="form-label">Color</label>
+            <input [(ngModel)]="Modelo.Color" type="text" class="form-control" name="Color">
+          </div>
+          <br>
+
+          <div class="mb3">
+            <label class="form-label">NumeroLinea</label>
+            <input [(ngModel)]="Modelo.NumeroLinea" type="text" class="form-control" name="NumeroLinea">
+          </div>
+          
+          <br>
+  
+          <div class="mb10">
+            <button (click)="modificar()" type="button" class="btn btn-danger">Guardar</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          
+  
+         
+  
+          
+  
+          
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>

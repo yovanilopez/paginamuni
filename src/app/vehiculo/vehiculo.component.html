@@ -1,20 +1,84 @@
-<html>
-    <head>
-        ....
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<div class="container">
+    <p>agregar</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+               
+          <div class="mb3">
+            <label class="form-label">IdVehiculo</label>
+            <input [(ngModel)]="Modelo.IdVehiculo" type="text" class="form-control" name="IdVehiculo">
+          </div>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <div class="mb3">
+            <label class="form-label">NumeroVehiculo</label>
+            <input [(ngModel)]="Modelo.NumeroVehiculo" type="text" class="form-control" name="NumeroVehiculo">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">NumeroPlaca</label>
+            <input [(ngModel)]="Modelo.NumeroPlaca" type="text" class="form-control" name="NumeroPlaca">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">Color</label>
+            <input [(ngModel)]="Modelo.Color" type="text" class="form-control" name="Color">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">NumeroLinea</label>
+            <input [(ngModel)]="Modelo.NumeroLinea" type="text" class="form-control" name="NumeroLinea">
+          </div>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-        ....
-    </head>
-    <body>
-        <app-root></app-root>
-    </body>
-</html>
+          <div class="mb3">
+            <label class="form-label">IdPersona</label>
+            <input [(ngModel)]="Modelo.IdPersona" type="text" class="form-control" name="IdPersona">
+          </div>
+
+          <div class="mb3">
+            <label class="form-label">IdEvidencias</label>
+            <input [(ngModel)]="Modelo.IdEvidencias" type="text" class="form-control" name="IdEvidencias">
+          </div>
+
+          <div class="mb3">
+            <label class="form-label">IdPagos</label>
+            <input [(ngModel)]="Modelo.IdPagos" type="text" class="form-control" name="IdPagos">
+          </div>
+
+          <div class="mb3">
+            <label class="form-label">IdRevision</label>
+            <input [(ngModel)]="Modelo.IdRevision" type="text" class="form-control" name="IdRevision">
+          </div>
+
+          <div class="mb3">
+            <label class="form-label">IdTurno</label>
+            <input [(ngModel)]="Modelo.IdTurno" type="text" class="form-control" name="IdTurno">
+          </div>
+
+
+          <br>
+  
+          <div class="mb10">
+            <button (click)="agregar()" type="button" class="btn btn-danger">Guardar</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          
+  
+         
+  
+         
+  
+         
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
