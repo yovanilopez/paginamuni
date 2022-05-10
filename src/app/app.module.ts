@@ -27,6 +27,18 @@ import { VehiculolistaComponent } from './vehiculo/COMPONENTES/vehiculolista/veh
 
 import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehiculomdif.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EvidenciaComponent } from './evidencia/evidencia.component';
+import { EvidencialistaComponent } from './evidencia/COMPONENTES/evidencialista/evidencialista.component';
+import { EvidenciamodifComponent } from './evidencia/COMPONENTES/evidenciamodif/evidenciamodif.component';
+import { PagoComponent } from './pago/pago.component';
+import { PagolistaComponent } from './pago/COMPONENTES/pagolista/pagolista.component';
+import { PagomodifComponent } from './pago/COMPONENTES/pagomodif/pagomodif.component';
+import { PersonaComponent } from './persona/persona.component';
+import { PersonalistaComponent } from './persona/COMPONENTES/personalista/personalista.component';
+import { PersonamodifComponent } from './persona/COMPONENTES/personamodif/personamodif.component';
+import { RevisionComponent } from './revision/revision.component';
+import { RevisionlistaComponent } from './revision/COMPONENTES/revisionlista/revisionlista.component';
+import { RevisionmodifComponent } from './revision/COMPONENTES/revisionmodif/revisionmodif.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +48,19 @@ import { HttpClientModule } from '@angular/common/http';
         BienvenidaComponent,
         VehiculoComponent,
         VehiculolistaComponent,
-        VehiculomdifComponent
+        VehiculomdifComponent,
+        EvidenciaComponent,
+        EvidencialistaComponent,
+        EvidenciamodifComponent,
+        PagoComponent,
+        PagolistaComponent,
+        PagomodifComponent,
+        PersonaComponent,
+        PersonalistaComponent,
+        PersonamodifComponent,
+        RevisionComponent,
+        RevisionlistaComponent,
+        RevisionmodifComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+
+
+
+<html lang="en">
+
+    <head>
+     
+    </head>
+    
+    <body>
+      <div class="container">
+    
+    
+        <table class="table">
+          <thead>
+            <tr>
+              
+              <th scope="col">IdVEvidencias</th>
+              <th scope="col">Evidencia</th>
+              <th scope="col">NumeroVehiculo</th>
+              <th scope="col">Editar</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let modelo of ListarModelos">
+             
+              <td>{{modelo.IdEvidencias}}</td>
+              <td>{{modelo.Evidencia}}</td>
+              <td>{{modelo.NumeroVehiculo}}</td>
+    
+             
+              
+              <td>
+           
+                <button (click)="modificar(modelo.IdEvidencias)" type="button" class="btn btn-info">Editar</button>
+              </td>
+              <td>
+                
+                <button (click)="eliminar(modelo.IdEvidencias)" type="button" class="btn btn-danger">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+       
+        <button type="button" class="btn btn-info" (click)="Onnuevo()">AgregarPersona</button>
+    
+      </div>
+    
+    </body>
+    </html>
+    
