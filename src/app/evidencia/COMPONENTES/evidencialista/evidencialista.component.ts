@@ -38,24 +38,14 @@ export class EvidencialistaComponent implements OnInit {
       err=> console.log(err));
   }
 
-
-
-
-
-
-
   modificar(IdEvidencias:string){
     this.router.navigate(['/modificarevidencia/'+IdEvidencias])
   }
 
 
-
-
   Onnuevo(){
     this.router.navigate(["agregarevidencia"])
     }
-  
-
   
   
 }

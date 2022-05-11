@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EvidenciamodifComponent } from "./EvidenciamodifComponent";
+import { TurnomodifComponent } from './turnomodif.component';
 
-describe('EvidenciamodifComponent', () => {
-  let component: EvidenciamodifComponent;
-  let fixture: ComponentFixture<EvidenciamodifComponent>;
+describe('TurnomodifComponent', () => {
+  let component: TurnomodifComponent;
+  let fixture: ComponentFixture<TurnomodifComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EvidenciamodifComponent ]
+      declarations: [ TurnomodifComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EvidenciamodifComponent);
+    fixture = TestBed.createComponent(TurnomodifComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

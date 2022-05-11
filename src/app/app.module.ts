@@ -29,7 +29,7 @@ import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehic
 import { HttpClientModule } from '@angular/common/http';
 import { EvidenciaComponent } from './evidencia/evidencia.component';
 import { EvidencialistaComponent } from './evidencia/COMPONENTES/evidencialista/evidencialista.component';
-import { EvidenciamodifComponent } from './evidencia/COMPONENTES/evidenciamodif/evidenciamodif.component';
+import { EvidenciamodifComponent } from "./evidencia/COMPONENTES/evidenciamodif/EvidenciamodifComponent";
 import { PagoComponent } from './pago/pago.component';
 import { PagolistaComponent } from './pago/COMPONENTES/pagolista/pagolista.component';
 import { PagomodifComponent } from './pago/COMPONENTES/pagomodif/pagomodif.component';
@@ -39,6 +39,9 @@ import { PersonamodifComponent } from './persona/COMPONENTES/personamodif/person
 import { RevisionComponent } from './revision/revision.component';
 import { RevisionlistaComponent } from './revision/COMPONENTES/revisionlista/revisionlista.component';
 import { RevisionmodifComponent } from './revision/COMPONENTES/revisionmodif/revisionmodif.component';
+import { TunoComponent } from './tuno/tuno.component';
+import { TurnolistaComponent } from './tuno/COMPONENTES/turnolista/turnolista.component';
+import { TurnomodifComponent } from './tuno/COMPONENTES/turnomodif/turnomodif.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +63,10 @@ import { RevisionmodifComponent } from './revision/COMPONENTES/revisionmodif/rev
         PersonamodifComponent,
         RevisionComponent,
         RevisionlistaComponent,
-        RevisionmodifComponent
+        RevisionmodifComponent,
+        TunoComponent,
+        TurnolistaComponent,
+        TurnomodifComponent
   ],
   imports: [
     BrowserModule,
