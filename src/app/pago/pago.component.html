@@ -1,1 +1,59 @@
-<p>pago works!</p>
+<div class="container">
+    <p>agregar</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+               
+          <div class="mb3">
+            <label class="form-label">Multa</label>
+            <input [(ngModel)]="Modelo.Multa" type="text" class="form-control" name="Multa">
+          </div>
+
+
+          <div class="mb3">
+            <label class="form-label">TipoInfraccion</label>
+            <input [(ngModel)]="Modelo.TipoInfraccion" type="text" class="form-control" name="TipoInfraccion">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">FechaPago</label>
+            <input [(ngModel)]="Modelo.FechaPago" type="text" class="form-control" name="FechaPago">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">Descripcion</label>
+            <input [(ngModel)]="Modelo.Descripcion" type="text" class="form-control" name="Descripcion">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">PagoLinea</label>
+            <input [(ngModel)]="Modelo.PagoLinea" type="text" class="form-control" name="PagoLinea">
+          </div>
+
+          <br>
+  
+          <div class="mb10">
+            <button (click)="agregar()" type="button" class="btn btn-danger">Guardar</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          
+  
+         
+  
+         
+  
+         
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+
+

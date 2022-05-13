@@ -1,1 +1,53 @@
-<p>turnomodif works!</p>
+
+<div class="container">
+    <p>agregar</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+         
+          
+
+          <div class="mb3">
+            <label class="form-label">FechaInicio</label>
+            <input [(ngModel)]="Modelo.FechaInicio" type="text" class="form-control" name="FechaInicio">
+          </div>
+  
+         
+  
+          <div class="mb3">
+            <label class="form-label">FechaFin</label>
+            <input [(ngModel)]="Modelo.FechaFin" type="text" class="form-control" name="FechaFin">
+          </div>
+          <br>
+
+          <div class="mb3">
+            <label class="form-label">NumeroTurno</label>
+            <input [(ngModel)]="Modelo.NumeroTurno" type="text" class="form-control" name="NumeroTurno">
+          </div>
+          
+          <br>
+  
+          <div class="mb10">
+            <button (click)="modificar()" type="button" class="btn btn-danger">Guardar</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          
+  
+         
+  
+          
+  
+          
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>
+
+

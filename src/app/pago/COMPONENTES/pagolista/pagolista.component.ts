@@ -43,23 +43,12 @@ export class PagolistaComponent implements OnInit {
   }
 
 
-
-
-
-
-
   modificar(NumeroPlaca:string){
-    this.router.navigate(['/modificarvehiculo/'+NumeroPlaca])
+    this.router.navigate(['/modificarpago/'+NumeroPlaca])
   }
 
-
-
-
   Onnuevo(){
-    this.router.navigate(["agregarvehiculo"])
+    this.router.navigate(["agregarpago"])
     }
-  
-
-  
-  
+ 
 }

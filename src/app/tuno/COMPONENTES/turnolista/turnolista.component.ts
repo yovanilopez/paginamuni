@@ -46,15 +46,15 @@ export class TurnolistaComponent implements OnInit {
 
 
 
-  modificar(NumeroPlaca:string){
-    this.router.navigate(['/modificarvehiculo/'+NumeroPlaca])
+  modificar(IdTurno:string){
+    this.router.navigate(['/modificarturno/'+IdTurno])
   }
 
 
 
 
   Onnuevo(){
-    this.router.navigate(["agregarvehiculo"])
+    this.router.navigate(["agregarturno"])
     }
   
 

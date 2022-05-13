@@ -1,1 +1,48 @@
-<p>revision works!</p>
+<div class="container">
+    <p>agregar</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <form>
+               
+          <div class="mb3">
+            <label class="form-label">Luces</label>
+            <input [(ngModel)]="Modelo.Luces" type="text" class="form-control" name="Luces">
+          </div>
+
+
+          <div class="mb3">
+            <label class="form-label">Identificacion</label>
+            <input [(ngModel)]="Modelo.Identificacion" type="text" class="form-control" name="Identificacion">
+          </div>
+  
+          <div class="mb3">
+            <label class="form-label">Papeles</label>
+            <input [(ngModel)]="Modelo.Papeles" type="text" class="form-control" name="Papeles">
+          </div>
+
+          <br>
+  
+          <div class="mb10">
+            <button (click)="agregar()" type="button" class="btn btn-danger">Guardar</button>
+          </div>
+  
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <form>
+          
+  
+         
+  
+         
+  
+         
+  
+        </form>
+      </div>
+  
+    </div>
+  
+  </div>
+  
+

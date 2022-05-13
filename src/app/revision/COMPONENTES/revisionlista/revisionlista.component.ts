@@ -40,14 +40,14 @@ export class RevisionlistaComponent implements OnInit {
 
 
   modificar(IdRevision:string){
-    this.router.navigate(['/modificarvehiculo/'+IdRevision])
+    this.router.navigate(['/modificarrevision/'+IdRevision])
   }
 
 
 
 
   Onnuevo(){
-    this.router.navigate(["agregarvehiculo"])
+    this.router.navigate(["agregarrevision"])
     }
   
 

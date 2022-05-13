@@ -30,8 +30,8 @@ export class PersonalistaComponent implements OnInit {
     );
   }
 
-  eliminar(IdPersona:string){
-    this.PersonasService.eliminarmodelo(IdPersona).subscribe(
+  eliminar(Nit:string){
+    this.PersonasService.eliminarmodelo(Nit).subscribe(
       res=>{
         console.log('Eliminado');
         this.ListarModelos;
@@ -42,21 +42,12 @@ export class PersonalistaComponent implements OnInit {
       err=> console.log(err));
   }
 
-
-
-
-
-
-
-  modificar(NumeroPlaca:string){
-    this.router.navigate(['/modificarvehiculo/'+NumeroPlaca])
+  modificar(Nit:string){
+    this.router.navigate(['/modificarpersona/'+Nit])
   }
 
-
-
-
   Onnuevo(){
-    this.router.navigate(["agregarvehiculo"])
+    this.router.navigate(["agregarpersona"])
     }
   
 

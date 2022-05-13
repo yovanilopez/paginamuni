@@ -14,8 +14,8 @@ export class PersonasService {
   }
 
   //get un boleto
-  getunmodelo(IdPersona:string){
-    return this.http.get(this.url+'/'+IdPersona);
+  getunmodelo(Nit:string){
+    return this.http.get(this.url+'/'+Nit);
   }
 
   //Crear
@@ -25,20 +25,20 @@ export class PersonasService {
   }
 
   //eliminar
-  eliminarmodelo(IdPersona:string){
-    return this.http.delete(this.url+'/'+IdPersona);
+  eliminarmodelo(Nit:string){
+    return this.http.delete(this.url+'/'+Nit);
   }
 
   //modificar
-  editmodelo(IdPersona:string, modelo:Modelo){
-    return this.http.put(this.url+'/'+IdPersona,modelo);
+  editmodelo(Nit:string, modelo:Modelo){
+    return this.http.put(this.url+'/'+Nit,modelo);
 
   }
 }
 export interface Modelo {
 
-  IdPersona?: any; 
-  Nit:string;
+  IdPersona:string; 
+  Nit?:any;
   Nombre:string;
   Apellido:string;
   Edad:string;
