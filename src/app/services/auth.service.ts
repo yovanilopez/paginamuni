@@ -14,7 +14,16 @@ export class AuthService {
  // return this.http.post('${this.URL}/usuarios',user);
   //return this.http.post( '${this.URL}/',user);
   return this.http.post(this.URL,user);
-
-
   }
+
+  isAuth(){
+
+    const token =localStorage.getItem('token');
+    if(!localStorage.getItem('token')){
+      return false;
+    }
+    return true;
+  }
+
+
 }
