@@ -46,6 +46,8 @@ import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 
+import{ JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,7 +99,10 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
 
   ],
-  providers: [],
+  providers: [
+    {provide: JWT_OPTIONS, useValue: JWT_OPTIONS},
+    JwtHelperService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

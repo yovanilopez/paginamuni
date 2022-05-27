@@ -1,8 +1,8 @@
+
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +13,14 @@ export class AuthGuard implements CanActivate {
     private authService: AuthService
   ){ }
   canActivate():boolean{
+
+   // if(this.authService.isAuth()){
+    //  console.log("token es invalido");
+     // return false;
+
+
+
+   // }
     return true;
   }
   

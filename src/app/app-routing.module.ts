@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { EvidencialistaComponent } from './evidencia/COMPONENTES/evidencialista/evidencialista.component';
 import { EvidenciamodifComponent } from './evidencia/COMPONENTES/evidenciamodif/EvidenciamodifComponent';
 import { EvidenciaComponent } from './evidencia/evidencia.component';
+import { AuthGuard } from './guards/auth.guard';
 import { NavComponent } from './nav/nav.component';
 import { PagolistaComponent } from './pago/COMPONENTES/pagolista/pagolista.component';
 import { PagomodifComponent } from './pago/COMPONENTES/pagomodif/pagomodif.component';
@@ -32,7 +33,7 @@ const routes: Routes = [
   {path: 'login',component:LoginComponent},
   {path: 'admin',component:AdminComponent},
   {path: 'home',component:HomeComponent},
-  {path: 'private',component:NavComponent},
+  {path: 'private',component:NavComponent,canActivate: [AuthGuard]},
 
 
 
