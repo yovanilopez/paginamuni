@@ -20,12 +20,16 @@ export class AuthService {
   //return this.http.post( '${this.URL}/',user);
   return this.http.post(this.URL,user);
   }
-  //isAuth():boolean{
-  //  const token = localStorage.getItem('token');
-  //  if(this.jwtHelper.isTokenExpired('token') || !localStorage.getItem('token')){
-   //   return false;
-   // }
-  //  return true;
- // }
+  
+    
+isAuth():boolean{
+  
+  const token =localStorage.getItem(('token'));
+  if(this.jwtHelper.isTokenExpired() || !localStorage.getItem('token')){
+   return false;
+ }
+ return true;
+}
+
 
 }

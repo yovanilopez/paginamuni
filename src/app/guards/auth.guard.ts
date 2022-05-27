@@ -14,13 +14,13 @@ export class AuthGuard implements CanActivate {
   ){ }
   canActivate():boolean{
 
-   // if(this.authService.isAuth()){
-    //  console.log("token es invalido");
-     // return false;
+    if(this.authService.isAuth()){
+     console.log("token es invalido");
+     return false;
 
 
 
-   // }
+   }
     return true;
   }
   
