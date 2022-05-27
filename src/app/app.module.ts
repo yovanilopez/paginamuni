@@ -42,6 +42,9 @@ import { RevisionmodifComponent } from './revision/COMPONENTES/revisionmodif/rev
 import { TunoComponent } from './tuno/tuno.component';
 import { TurnolistaComponent } from './tuno/COMPONENTES/turnolista/turnolista.component';
 import { TurnomodifComponent } from './tuno/COMPONENTES/turnomodif/turnomodif.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,10 @@ import { TurnomodifComponent } from './tuno/COMPONENTES/turnomodif/turnomodif.co
         RevisionmodifComponent,
         TunoComponent,
         TurnolistaComponent,
-        TurnomodifComponent
+        TurnomodifComponent,
+        AdminComponent,
+        LoginComponent,
+        HomeComponent
   ],
   imports: [
     BrowserModule,

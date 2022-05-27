@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 import { EvidencialistaComponent } from './evidencia/COMPONENTES/evidencialista/evidencialista.component';
 import { EvidenciamodifComponent } from './evidencia/COMPONENTES/evidenciamodif/EvidenciamodifComponent';
 import { EvidenciaComponent } from './evidencia/evidencia.component';
+import { NavComponent } from './nav/nav.component';
 import { PagolistaComponent } from './pago/COMPONENTES/pagolista/pagolista.component';
 import { PagomodifComponent } from './pago/COMPONENTES/pagomodif/pagomodif.component';
 import { PagoComponent } from './pago/pago.component';
@@ -21,7 +26,15 @@ import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehic
 import { VehiculoComponent } from './vehiculo/vehiculo.component';
 
 const routes: Routes = [
-  {path: '',component:BienvenidaComponent},
+  {path: 'home',component:HomeComponent},
+
+
+  {path: 'login',component:LoginComponent},
+  {path: 'admin',component:AdminComponent},
+  {path: 'home',component:HomeComponent},
+  {path: 'private',component:NavComponent},
+
+
 
   //vehiculo
   {path: 'listavehiculo',component:VehiculolistaComponent},
