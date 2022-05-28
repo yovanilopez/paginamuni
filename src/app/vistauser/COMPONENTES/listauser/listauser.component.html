@@ -1,0 +1,55 @@
+
+
+
+<style>
+  body {
+    background-image: url('img_girl.jpg');
+  }
+  </style>
+
+
+<html lang="en">
+
+  <head>
+   
+  </head>
+  
+  <body>
+    <div class="container">
+        
+  
+      <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">NumeroPlaca</th>
+            <th scope="col">IdVehiculo</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">multa</th>
+            
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let modelo of ListarModelos">
+           
+            <td>{{modelo.NumeroPlaca}}</td>
+            <td>{{modelo.IdVehiculo}}</td>
+            <td>{{modelo.Nombre}}</td>
+            <td>{{modelo.multa}}</td>
+            
+           
+            
+              
+              
+           
+          </tr>
+        </tbody>
+      </table>
+     
+      
+  
+    </div>
+  
+  </body>
+  </html>

@@ -46,7 +46,11 @@ import { AdminComponent } from './components/admin/admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 
-import{ JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt'
+import{ JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt';
+import { NavuserComponent } from './navuser/navuser.component';
+import { VistauserComponent } from './vistauser/vistauser.component';
+import { ListauserComponent } from './vistauser/COMPONENTES/listauser/listauser.component';
+import { ModitauserComponent } from './vistauser/COMPONENTES/moditauser/moditauser.component'
 
 @NgModule({
   declarations: [
@@ -74,7 +78,11 @@ import{ JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt'
         TurnomodifComponent,
         AdminComponent,
         LoginComponent,
-        HomeComponent
+        HomeComponent,
+        NavuserComponent,
+        VistauserComponent,
+        ListauserComponent,
+        ModitauserComponent
   ],
   imports: [
     BrowserModule,

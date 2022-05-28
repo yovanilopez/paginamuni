@@ -10,6 +10,7 @@ import { EvidenciamodifComponent } from './evidencia/COMPONENTES/evidenciamodif/
 import { EvidenciaComponent } from './evidencia/evidencia.component';
 import { AuthGuard } from './guards/auth.guard';
 import { NavComponent } from './nav/nav.component';
+import { NavuserComponent } from './navuser/navuser.component';
 import { PagolistaComponent } from './pago/COMPONENTES/pagolista/pagolista.component';
 import { PagomodifComponent } from './pago/COMPONENTES/pagomodif/pagomodif.component';
 import { PagoComponent } from './pago/pago.component';
@@ -25,11 +26,19 @@ import { TunoComponent } from './tuno/tuno.component';
 import { VehiculolistaComponent } from './vehiculo/COMPONENTES/vehiculolista/vehiculolista.component';
 import { VehiculomdifComponent } from './vehiculo/COMPONENTES/vehiculomdif/vehiculomdif.component';
 import { VehiculoComponent } from './vehiculo/vehiculo.component';
+import { ListauserComponent } from './vistauser/COMPONENTES/listauser/listauser.component';
+import { VistauserComponent } from './vistauser/vistauser.component';
 
 const routes: Routes = [
-  {path: 'home',component:HomeComponent},
+  {path: '',component:HomeComponent},
 
 
+  //user
+  {path: 'listamultas',component:ListauserComponent},
+  {path: 'navuser',component:NavuserComponent},
+
+
+  // administradores
   {path: 'login',component:LoginComponent},
   {path: 'admin',component:AdminComponent},
   {path: 'home',component:HomeComponent},
