@@ -37,9 +37,9 @@ export class VistauserService {
 }
 export interface Modelo {
 
-  NumeroPlaca: String,
-  IdVehiculo: String,
-  Nombre  :String,
-  multa  :String,
+  NumeroPlaca: string,
+  IdVehiculo  ?: any,
+  Nombre  :string,
+  multa  :string,
   
 }

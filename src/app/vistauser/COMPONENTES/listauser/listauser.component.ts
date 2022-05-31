@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { VistauserService, Modelo} from './../../Services/vistauser.service';
+import * as printJS from 'print-js';
 
 
 @Component({
@@ -11,6 +12,8 @@ import { VistauserService, Modelo} from './../../Services/vistauser.service';
 export class ListauserComponent implements OnInit {
 
   ListarModelos!: Modelo[];
+
+  teamJSON: JSON | undefined;
   constructor(  private   VistauserService: VistauserService, private router:Router) { }
 
 
@@ -23,33 +26,29 @@ export class ListauserComponent implements OnInit {
       res=>{
         console.log(res)
         this.ListarModelos=<any>res;
+        this.teamJSON=<any>res;
+   
       },
       err=> console.log(err)
+     
+
     );
   }
+  
+  print(){
+
+    printJS({printable: this.teamJSON, properties: ['NumeroPlaca', 'IdVehiculo', 'Nombre','multa'], type: 'json'})
 
 
-
-
-  eliminar(Nit:string){
-    this.VistauserService.eliminarmodelo(Nit).subscribe(
-      res=>{
-        console.log('Eliminado');
-        this.ListarModelos;
-        
-
-
-      },
-      err=> console.log(err));
   }
 
-  modificar(Nit:string){
-    this.router.navigate(['/modificarpersona/'+Nit])
-  }
 
-  Onnuevo(){
-    this.router.navigate(["agregarpersona"])
-    }
+
+  
+
+ 
+
+  
   
 
   
