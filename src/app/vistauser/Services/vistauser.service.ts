@@ -6,7 +6,7 @@ import{HttpClient}from '@angular/common/http'
 })
 export class VistauserService {
 
-  url="http://localhost:3000/tablamultas"
+  url="http://localhost:3000/vehiculo-persona-pagos"
   constructor( private http:HttpClient) { }
 
   getModelos(){
