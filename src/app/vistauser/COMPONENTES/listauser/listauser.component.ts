@@ -37,7 +37,8 @@ export class ListauserComponent implements OnInit {
   
   print(){
 
-    printJS({printable: this.teamJSON, properties: ['NumeroPlaca', 'IdVehiculo', 'Nombre','multa'], type: 'json'})
+    printJS({printable: this.teamJSON, properties: ['NumeroPlaca', 'IdVehiculo', 'Nombre','multa'], type: 'json' , gridHeaderStyle: 'color: red;  border: 1px solid #3971A5;',
+    gridStyle: 'border: 1px solid #3971A5;'})
 
 
   }
