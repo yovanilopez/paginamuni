@@ -45,6 +45,18 @@ export class ListauserComponent implements OnInit {
   }
 
 
+ 
+    retornar(){
+
+
+      this.router.navigate(['/navuser']);
+  
+     }
+  
+
+
+  
+
 
 
 

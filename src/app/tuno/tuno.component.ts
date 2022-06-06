@@ -24,4 +24,11 @@ export class TunoComponent implements OnInit{
      this.router.navigate(['/listarturno']);
    }
 
+   retornar(){
+
+
+    this.router.navigate(['/private']);
+
+   }
+
 }
