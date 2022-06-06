@@ -58,6 +58,9 @@ export class TurnolistaComponent implements OnInit {
     }
   
 
-  
+  retornar(){
+    this.router.navigate(["private"])
+
+  }
   
 }

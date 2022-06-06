@@ -47,6 +47,11 @@ export class EvidencialistaComponent implements OnInit {
     this.router.navigate(["agregarevidencia"])
     }
   
+    retornar(){
+
+      this.router.navigate(["private"])
+
+    }
   
 }
 

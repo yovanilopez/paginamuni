@@ -50,6 +50,11 @@ export class PersonalistaComponent implements OnInit {
     this.router.navigate(["agregarpersona"])
     }
   
+    retornar(){
+
+
+      this.router.navigate(["private"])
+    }
 
   
   

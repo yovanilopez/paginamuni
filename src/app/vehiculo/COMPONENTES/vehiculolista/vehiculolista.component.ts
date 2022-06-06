@@ -41,6 +41,7 @@ export class VehiculolistaComponent implements OnInit {
 
       },
       err=> console.log(err));
+      setTimeout(location.reload.bind(location),500);// refresque la pagina al darle click
   }
 
 
@@ -60,7 +61,11 @@ export class VehiculolistaComponent implements OnInit {
     this.router.navigate(["agregarvehiculo"])
     }
   
-
+    retornar(){
+      this.router.navigate(["private"])
+      }
+    
+  
   
   
 }

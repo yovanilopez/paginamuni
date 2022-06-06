@@ -50,5 +50,9 @@ export class PagolistaComponent implements OnInit {
   Onnuevo(){
     this.router.navigate(["agregarpago"])
     }
+
+    retornar(){
+      this.router.navigate(["private"])
+      }
  
 }

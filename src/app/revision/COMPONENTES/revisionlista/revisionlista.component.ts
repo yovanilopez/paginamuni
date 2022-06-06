@@ -51,7 +51,10 @@ export class RevisionlistaComponent implements OnInit {
     }
   
 
-  
+    retornar(){
+      this.router.navigate(["private"])
+      }
+    
   
 }
 

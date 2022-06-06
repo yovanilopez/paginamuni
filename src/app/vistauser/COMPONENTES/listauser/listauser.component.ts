@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { VistauserService, Modelo} from './../../Services/vistauser.service';
 import * as printJS from 'print-js';
+import { CdkColumnDef, TEXT_COLUMN_OPTIONS } from '@angular/cdk/table';
 
 
 @Component({
@@ -26,7 +27,7 @@ export class ListauserComponent implements OnInit {
       res=>{
         console.log(res)
         this.ListarModelos=<any>res;
-        this.teamJSON=<any>res;
+        this.teamJSON =<any>res;
    
       },
       err=> console.log(err)
@@ -35,13 +36,15 @@ export class ListauserComponent implements OnInit {
     );
   }
   
-  print(){
+ print(IdVehiculo:string){
 
-    printJS({printable: this.teamJSON, properties: ['NumeroPlaca', 'IdVehiculo', 'Nombre','multa'], type: 'json' , gridHeaderStyle: 'color: red;  border: 1px solid #3971A5;',
-    gridStyle: 'border: 1px solid #3971A5;'})
+   printJS({printable: this.teamJSON, properties: ['NumeroPlaca', 'IdVehiculo', 'Nombre','multa'], type: 'json' , gridHeaderStyle: 'color: red;  border: 1px solid #3971A5;',
+  gridStyle: 'border: 1px solid #3971A5;'})
 
 
   }
+
+
 
 
 

@@ -24,14 +24,10 @@ export class VistauserService {
 
   }
 
-  //eliminar
-  eliminarmodelo(IdPagos:string){
-    return this.http.delete(this.url+'/'+IdPagos);
-  }
-
+  
   //modificar
-  editmodelo(IdPagos:string, modelo:Modelo){
-    return this.http.put(this.url+'/'+IdPagos,modelo);
+  editmodelo(IdVehiculo:string, modelo:Modelo){
+    return this.http.put(this.url+'/'+IdVehiculo,modelo);
 
   }
 }
